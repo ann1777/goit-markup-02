@@ -1,0 +1,66 @@
+:root {
+    --primary-text-color: rdba(0, 0, 0, 0.8);
+    --text-color: #434455;
+    --title-text-color: #2E2F42; 
+    --accent-text-color: #4D5AE5;
+    --white-title-text-color:#F4F4FD;
+    --white-text-color: #E7E9FC;
+    --primary-white-color: #ffff;
+    --background-color: #E5E5E5;
+    --dark-background-color: #2E2F42;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+ main {
+    background-color: var(--primary-white-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    padding-left: 156px;
+ }
+
+ footer {
+    background-color: var(--dark-background-color);
+    width: 264px;
+    height: 100px;
+    padding-top: 100px;
+    padding-left: 156px;
+    padding-right: 1020px;;
+    padding-bottom: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+ } 
+
+ .page-nav {
+    
+ }
+
+
+/* прибирає крапки у списків */
+.list {
+    list-style: none;
+}
+
+/* прибирає підкреслення */
+.link {
+    text-decoration: none;
+}
+
+/* .list#logo-web {
+    text-decoration-color: var(--accent-text-color);
+    text-align: 0;
+}
+
+.list#logo-studio {
+    text-decoration-color: var(--white-title-text-color);
+    text-align: 0;
+} */
+ 
