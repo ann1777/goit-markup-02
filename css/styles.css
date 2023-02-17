@@ -295,11 +295,26 @@ footer {
     flex: 0 0 auto;
  } 
 
+.text.logo-footer {
+    margin-top: 100px;
+    margin-left: 156px;
+    width: 264px;
+    height: 110px;
+    position: absolute;
+    /* margin: 100px, 1020px, 100px, 150px; */
+}
+
+a.logo-footer {
+    height: 22px;
+    width: 115px;
+}
+
 .main-footer-content {
     margin-top: 16px;
     color: var(--white-text-color);
+    font-family: var(--primary-font-family);
+    font-size: var(--regular-font-size); 
     font-weight: 400px;
     width: 264px;
     height: 72px;
-    padding-left: 156px;
 }
