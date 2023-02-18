@@ -14,10 +14,14 @@
     --header1-font-size: 56px;
     --header2-font-size: 36px;
     --header3-font-size: 20px;
+    --logo-font-size: 18px;
     --regular-font-size: 16px; 
     --text-font-weight: 400;
     --header3-font-weight: 500;
     --header-font-weight: 700;
+    --header1-line-height: 1.07;
+    --header2-line-height: 1.11;
+    --header3-line-height: 1.20;
     --page-width: 1440px;
     --page-height: 2590px;
     --portfolio-page-heignt: 2074px;
@@ -28,6 +32,7 @@
 body {
   width: var(--page-width); 
   height: var(--page-height);
+  color: var(--text-color);
   /* width: 100%; 
   height: 100%; */
 }  
@@ -55,7 +60,8 @@ a.logo {
     margin-top: 24px;
     margin-bottom: 24px; 
     font-family: var(--secondary-font-family);
-    font-size: 18px;
+    font-size: var(--logo-font-size);
+    line-height: var(--header3-line-height);
     width: 115px;
     letter-spacing: 3%;
     text-align: 0;
@@ -75,10 +81,10 @@ a.logo {
     justify-content:space-between;
     text-decoration: none;
     align-self: center;
-    /* margin: 24px, 332px, 24px, 76px; */
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
     font-weight: var(--header3-font-weight);
+    line-height: var(--header3-line-height);
     letter-spacing: 0.02em;
     color: var(--dark-background-color);
 }
@@ -92,9 +98,9 @@ a.menu-nav{
     margin-bottom: 24px;
     margin-right: 40px;
     text-decoration: none;
-  /* /  padding-left: 250px; */
-    letter-spacing: 0.02em;
     color: var(--primary-font-family);
+    line-height: var(--header3-line-height);
+    letter-spacing: 0.02em;
 }
 
 .section {
@@ -109,6 +115,7 @@ a.menu-nav{
 
 .filters {
    height: 48px; 
+   line-height: var(--header3-line-height);
 }
  
  main {
@@ -125,20 +132,19 @@ a.menu-nav{
     height: 600px;
  }
 
- .hero-img h1 {
-    color: var(--white-text-color);
-    font-size: var(--header1-font-size);
+ .hero-img h1 { 
     width: 490px;
     padding-left: 472px;
     padding-right: 472px;
     padding-top: 188px;
     padding-bottom: 40px;
     margin: 0;
+    font-size: var(--header1-font-size);
+    line-height: var(--header1-line-height);
+    color: var(--white-text-color);
  }
 
 .hero-img .order-button {
-    background-color: var(--accent-text-color);
-    color: var(--primary-white-color);
     width: 169px;
     height: 56px;
     padding: 16px 32px 16px 32px;
@@ -146,6 +152,8 @@ a.menu-nav{
     margin-right: 636px;
     margin-left: 635px;
     grid-auto-flow: column;
+    background-color: var(--accent-text-color);
+    color: var(--primary-white-color);
 }
 /* hide lists dots */
 .list {
@@ -154,9 +162,10 @@ a.menu-nav{
 
 /* hide link text underline */
 .link {
-    text-decoration: none;
-    color: var(--title-text-color);
     font-size: 16px;
+    color: var(--title-text-color);
+    line-height: var(--header3-line-height);
+    text-decoration: none;
 }
  
 
@@ -165,27 +174,28 @@ a.menu-nav{
 }
 
 /* Main page section titles */
-h2.title {
-    font-family: var(--primary-font-family);
-    font-size: var(--header2-font-size);
-    font-weight: var(--header-font-weight);
+h2.title {  
     margin-bottom: 72px;
     margin-top: 0px;
     text-align: center;
     display:flow-root;
     width: var(--page-width);
+    font-family: var(--primary-font-family);
+    font-size: var(--header2-font-size);
+    font-weight: var(--header-font-weight);
+    line-height: var(--header2-line-height);
 }
 
 /* Section1 features container */
 ul.container-wrapper.features {
+    width: 1128px;
+    height: 104px;
+    display: flex;
     margin-left: 156px;
     margin-right: 156px;
     margin-top: 120px;
     margin-bottom: 120px;
     padding-left: 0px;
-    width: 1128px;
-    height: 104px;
-    display: flex;
 }
 
 li.features.list {
@@ -205,6 +215,8 @@ h3 {
     letter-spacing: 0.02em;
     font-family: var(--primary-font-family);
     font-size: var(--header3-font-size);
+    font-weight: var(--header3-font-weight);
+    line-height: var(--header3-line-height);
 }
 
 p.feature-content {
@@ -217,11 +229,7 @@ p.feature-content {
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
-}
-
-p.feature-content.strategy {
-    width: 264px;
-    height: 72px;
+    line-height: var(--header3-line-height);
 }
 
 /* Our Team container */
@@ -262,7 +270,6 @@ section#team.section.cards {
     margin: 212px, 24px, 140px, 24px;
     align-items: center;
     background-color: var(--white-background-color);
-    /* just.section.cardsify-content:space-between; */
 }
 
 /* Our Team title */
@@ -298,6 +305,7 @@ li.team-card-container.list#first {
     font-family: var(--primary-font-family);
     font-weight: var(--header3-font-weight);
     font-size: var(--header3-font-size);
+    line-height: var(--header3-line-height);
     margin-bottom: 8px;
 }
 
@@ -305,15 +313,16 @@ li.team-card-container.list#first {
     font-family: var(--primary-font-family);
     font-weight: var(--text-font-weight);
     font-size: var(--regular-font-size);
+    line-height: var(--header3-line-height);
     text-align: center;
 }
 
 footer {
-    background-color: var(--dark-background-color);
-    width: var(--page-width);
     height: 310px;
+    width: var(--page-width);
+    font-weight: var(--text-font-weight);
+    background-color: var(--dark-background-color);
     font-style: normal;
-    font-weight: 400;
     font-display: swap;
     flex: 0 0 auto;
  } 
@@ -332,11 +341,12 @@ a.logo-footer {
 }
 
 .main-footer-content {
+    width: 264px;
+    height: 72px;
     margin-top: 16px;
     color: var(--white-text-color);
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size); 
-    font-weight: 400px;
-    width: 264px;
-    height: 72px;
+    font-weight: var(--text-font-weight);
+    line-height: var(--header3-line-height);
 }
