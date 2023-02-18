@@ -247,13 +247,14 @@ li.team-card-container.list {
     width: 264px;
     height: 380px;
     margin: 212px, 24px, 140px, 24px;
+    padding-left: 0px;
     align-items: center;
     margin-left: 24px;
     background-color: var(--primary-white-color);
 }
 
 li.team-card-container.list#first {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .card-content {
