@@ -22,6 +22,8 @@
     --header1-line-height: 1.07;
     --header2-line-height: 1.11;
     --header3-line-height: 1.20;
+    --header-logo-line-height: 1.33;
+    --footer-logo-line-height: 1.17;
     --page-width: 1440px;
     --page-height: 2590px;
     --portfolio-page-heignt: 2074px;
@@ -61,7 +63,7 @@ a.logo {
     margin-bottom: 24px; 
     font-family: var(--secondary-font-family);
     font-size: var(--logo-font-size);
-    line-height: var(--header3-line-height);
+    line-height: var(--header-logo-line-height);
     width: 115px;
     letter-spacing: 3%;
     text-align: 0;
@@ -162,7 +164,7 @@ a.menu-nav{
 
 /* hide link text underline */
 .link {
-    font-size: 16px;
+    font-size: var(--regular-font-size);
     color: var(--title-text-color);
     line-height: var(--header3-line-height);
     text-decoration: none;
@@ -338,6 +340,7 @@ footer {
 a.logo-footer {
     height: 22px;
     width: 115px;
+    line-height: var(--footer-logo-line-height);
 }
 
 .main-footer-content {
