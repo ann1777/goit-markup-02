@@ -210,7 +210,7 @@ ul.container-wrapper.features {
 h3 {
     margin-bottom: 8px;
     margin-top: 0px;
-    width: 264px;
+    width: 290px;
     margin-right: 24px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
@@ -249,7 +249,6 @@ li.img-cotainer.list {
     height: 300px;
     background-color: var(--white-background-color);
     margin-right: 24px;
-    /* padding-bottom: 150px; */
 }
 
 li.img-cotainer.list.first {
@@ -371,32 +370,41 @@ a.logo-footer {
  } 
 
  ul.rows-container-wrapper.up {
-    margin: 0px;
+    margin-top: 72px;
     padding: 0px;
+    padding-left: 0px;
     padding-inline-start: 0px;
 }
-
  
 .rows-container-wrapper {
    width: var(--container-wrapper-width);
    height: 360px;
    display: flex;
    margin: 48px 156px;
+   padding-left: 0px;
    justify-content:space-between;
 }
+ul.card-content.list {
+    width: 360px;
+    height: 56px;
+    padding-left: 0px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
 
-.rows-container-wrapper.up {
-    margin-top: 72px;
+ul.list>h3.content#name {
+    margin-bottom: 8px;
+}
+
+ul.list>p.content#type {
+    margin-bottom: 32px;
 }
 
 .rows-container-wrapper.bottom {
     margin-bottom: 120px;
 }
 
-.content-name {
-    width: 290px;
-    height: 24px;
-    margin: 32px 54px 8px 18px;
+.content#name {
     font-family: var(--primary-font-family);
     font-size: var(--header3-font-size);
     font-weight: var(--header3-font-weight);
@@ -406,10 +414,9 @@ a.logo-footer {
     color: var(--title-text-color);
 }
 
-p.content-type {
-    width: 65px;
-    height: 24px;
-    margin: 0px 34px 0px 18px;
+p.content#type {
+    margin-top: 0px;
+    margin-bottom: 32px;
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
