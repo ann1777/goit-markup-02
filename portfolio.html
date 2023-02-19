@@ -19,7 +19,7 @@
     <header class="header">
         <nav class="page-nav">
             <a href="./index.html" class="logo"><span class="accentcolor">WEB</span>STUDIO</a>
-            <ul class="menu-nav container-wrapper list">
+            <ul class="menu-nav container-wrapper">
                 <li><a href="./index.html" class="link" target="_blank">Studio</a></li>
                 <li><a href="./portfolio.html" class="link" target="_blank">Portfilio</a></li>
                 <li><a href="#contacts" class="link" target="_blank">Contacts</a></li>
@@ -27,12 +27,13 @@
         </nav>
         <address>
             <ul class="contacts container-wrapper list">
-                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+                <li><a href="mailto:info@devstudio.com" class="contact-email">info@devstudio.com</a></li>
+                <li><a href="tel:+110001111111" class="contact-phone">+11(000)111-11-11</a></li>
             </ul>
         </address>
     </header>
-    <main>
+    <main class="body-container portfolio">
+        
         <!-- Filters container  -->
         <section class="filters-container">
             <!-- Hidden header -->
@@ -47,72 +48,77 @@
             <a class="vector"></a>
         </span>
         <!-- Row 1 container  -->
-        <section class="container-wrapper">
+        <section>
             <!-- Hidden header -->
             <h2 hidden>Project cards</h2>
-            <ul>
+            <ul class="rows-container-wrapper up">
                 <!-- Card1 content -->
-                <li class="card-cotainer list">
+                <li class="card-cotainer list first">
                     <img class="card-img" src="./img/img11.jpg" alt="BankApp mobile design" width="360" height="300">
-                    <h3>Banking App Interface Concept</h3>
-                    <p>App</p>
+                    <h3 class="content-name">Banking App Interface Concept</h3>
+                    <p class="content-type">App</p>
                 </li>
                 <li class="card-cotainer list">
                     <img class="card-img" src="./img/img12.jpg" alt="Payment App img." width="360" height="300">
-                    <h3>Cashless Payment</h3>
-                    <p>Marketing</p>
+                    <h3 class="content-name">Cashless Payment</h3>
+                    <p class="content-type">Marketing</p>
                 </li>
                 <li class="card-cotainer list">
                     <img class="card-img" src="./img/img13.jpg" alt="Meditation App img." width="360" height="300">
-                    <h3>Meditaion App</h3>
-                    <p>App</p>
+                    <h3 class="content-name">Meditaion App</h3>
+                    <p class="content-type">App</p>
                 </li>
             </ul>
             <!-- Row 2 container  -->
-            <ul class="container-wrapper imgs">
-                <li class="card-cotainer  list">
+            <ul class="rows-container-wrapper">
+                <li class="card-cotainer  list first">
                     <img class="card-img" src="./img/img21.jpg" alt="Taxi Service img." width="360" height="300">
-                    <h3>Taxi Service</h3>
-                    <p>Marketing</p>
+                    <h3 class="content-name">Taxi Service</h3>
+                    <p class="content-type">Marketing</p>
                 </li>
                 <li class="card-cotainer list">
                     <img class="card-img" src="./img/img22.jpg" alt="Phone screen img." width="360" height="300">
-                    <h3>Screen Illustrations</h3>
-                    <p>Design</p>
+                    <h3 class="content-name">Screen Illustrations</h3>
+                    <p class="content-type">Design</p>
                 </li>
                 <li class="card-cotainer list">
                     <img class="card-img" src="./img/img23.jpg" alt="Online Courses img." width="360" height="300">
-                    <h3>Online Courses</h3>
-                    <p>Marketing</p>
+                    <h3 class="content-name">Online Courses</h3>
+                    <p class="content-type">Marketing</p>
                 </li>
             </ul>
             <!-- Row 3 container  -->
-            <ul class="container-wrapper cards">
-                <li class="card-cotainer list">
+            <ul class="rows-container-wrapper bottom">
+                <li class="card-cotainer list" id="first">
                     <img class="card-img" src="./img/img31.jpg" alt="Instagram Stories img." width="360" height="300">
-                    <h3>Instagram Stories Concept</h3>
-                    <p>Design</p>
+                    <h3 class="content-name">Instagram Stories Concept</h3>
+                    <p class="content-type">Design</p>
                 </li>
                 <li class="card-cotainer list">
                     <img class="card-img" src="./img/img32.jpg" alt="Organic Food img." width="360" height="300">
-                    <h3>Organic Food</h3>
-                    <p>Web Site</p>
+                    <h3 class="content-name"">Organic Food</h3>
+                    <p class="content-type">Web Site</p>
                 </li>
                 <li class="card-cotainer list">
                     <img class="card-img" src="./img/img33.jpg" alt="Fresh Coffee img." width="360" height="300">
-                    <h3>Fresh Coffee</h3>
-                    <p>Web Site</p>
+                    <h3 class="content-name">Fresh Coffee</h3>
+                    <p class="content-type">Web Site</p>
                 </li>
             </ul>
         </section>
     </main>
     <!-- Footer container  -->
-    <footer class="text">
-        <a href="./index.html" class="logo"><span class="accentcolor">WEB</span><span
-                class="whitecolor">SUDIO</span></a>
-        <p class="main-footer-content">Increase the flow of customers and sales for your business with digital marketing
-            &
-            growth solutions.</p>
+    <footer>
+        <ul class="text logo-footer list">
+            <li>
+                <a href="./index.html" class="logo-footer"><span class="accentcolor">WEB</span><span
+                        class="whitecolor">SUDIO</span></a>
+            </li>
+            <li>
+                <p class="main-footer-content">Increase the flow of customers and sales for your business with digital
+                    marketing & growth solutions.</p>
+            </li>
+        </ul>
     </footer>
 </body>
 
