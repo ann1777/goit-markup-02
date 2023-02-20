@@ -453,11 +453,11 @@ ul.card-content.list {
     margin-bottom: 32px;
 }
 
-ul.list>h3.content#name {
+ul.list>h3.content.name {
     margin-bottom: 8px;
 }
 
-ul.list>p.content#type {
+ul.list>p.content.type {
     margin-bottom: 32px;
 }
 
@@ -465,7 +465,7 @@ ul.list>p.content#type {
     margin-bottom: 120px;
 }
 
-.content#name {
+.content.name {
     font-family: var(--primary-font-family);
     font-size: var(--header3-font-size);
     font-weight: var(--header3-font-weight);
@@ -475,7 +475,7 @@ ul.list>p.content#type {
     color: var(--title-text-color);
 }
 
-p.content#type {
+p.content.type {
     margin-top: 0px;
     margin-bottom: 32px;
     font-family: var(--primary-font-family);
