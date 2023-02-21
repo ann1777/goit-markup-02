@@ -54,7 +54,7 @@ body {
  header {
     /* background-color: var(--primary-white-color); */
     border-top-color: var(--white-text-color);
-    /* width: var(--page-width); */
+    width: var(--page-width);
     height: 72px;
     align-items: center;
     display: flex;
@@ -63,7 +63,6 @@ body {
 
 .page-nav {
     height: 72px;
-    width: 720px;
     display:flex;
 }
 
@@ -94,7 +93,10 @@ a.logo {
     width: 261px;
     justify-content:space-between;
     text-decoration: none;
+    align-content: left;
+    padding-left: 0px;
     align-self: center;
+    margin-right: 332px;
     /* font-family: var(--primary-font-family); */
     font-size: var(--regular-font-size);
     /* font-weight: var(--header3-font-weight); */
@@ -114,15 +116,20 @@ a.link-active:focus {
 }
 
 .contacts a{
-    gap: 40px;
+    margin-right: 40px;
     margin-top: 24px;
     margin-bottom: 24px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     text-decoration: none;
     /* color: var(--primary-font-family); */
     line-height: var(--header3-line-height);
     color: var(--text-color);
     letter-spacing: 0.02em;
+}
+
+.contact-phone a {
+    margin-right: 156px;
+    align-content: right;
 }
 
 .section {
@@ -138,6 +145,12 @@ a.link-active:focus {
 .filters {
    height: 48px; 
    line-height: var(--header3-line-height);
+}
+
+ul.contacts.container-wrapper.list {
+    font-style: normal;
+    align-self: left;
+    padding-left: 0px;
 }
  
  main {
