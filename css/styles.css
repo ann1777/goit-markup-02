@@ -107,8 +107,10 @@ a.menu-nav{
     text-decoration: none;
 }
 
-a.link.active:hover {
+a.link.active:hover,
+a.link-active:focus {
     color: var(--btn-active-color);
+    text-decoration: underline var(--btn-active-color);
 }
 
 .contacts a{
@@ -176,8 +178,10 @@ a.link.active:hover {
     color: var(--primary-white-color);
 }
 
-.hero-img .order-button:hover {
-    color: var(--btn-active-color);
+.hero-img .order-button:hover,
+.hero-img .order-button:focus {
+    background-color: var(--btn-active-color);
+    color: var(--primary-white-color);
 }
 
 /* hide lists dots */
