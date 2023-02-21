@@ -42,8 +42,8 @@ body {
   height: var(--page-height);
   background-color: var(--primary-white-color);
   color: var(--text-color);
-  width: 100%; 
-  height: 100%;
+  /* width: 100%; 
+  height: 100%; */
   font-family: var(--primary-font-family);
   font-weight: var(--header3-font-weight);
   font-size: var(--text-font-size);
@@ -481,11 +481,6 @@ ul.card-content.list {
     margin-bottom: 32px;
 }
 
-h3.content.name {
-    margin-bottom: 8px;
-    width: 290px;
-}
-
 ul.list>p.content.type {
     margin-bottom: 32px;
 }
@@ -494,10 +489,12 @@ ul.list>p.content.type {
     margin-bottom: 120px;
 }
 
-.content.name {
-    /* font-family: var(--primary-font-family); */
+h3.content.name {
+    margin-bottom: 8px;
+    width: 290px;
+    font-family: var(--primary-font-family);
     font-size: var(--header3-font-size);
-    /* font-weight: var(--header3-font-weight); */
+    font-weight: var(--header3-font-weight);
     line-height: var(--header3-line-height);
     letter-spacing: 0.02em;
     text-align: left;
@@ -507,7 +504,7 @@ ul.list>p.content.type {
 p.content.type {
     margin-top: 0px;
     margin-bottom: 32px;
-    /* font-family: var(--primary-font-family); */
+    font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
     line-height: var(--text-line-height);
