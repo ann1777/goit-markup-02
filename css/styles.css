@@ -16,7 +16,8 @@
     --header2-font-size: 36px;
     --header3-font-size: 20px;
     --logo-font-size: 18px;
-    --regular-font-size: 16px; 
+    --regular-font-size: 16px;
+    --text-font-size: 14px; 
     --text-font-weight: 400;
     --header3-font-weight: 500;
     --header-font-weight: 700;
@@ -43,13 +44,17 @@ body {
   color: var(--text-color);
   width: 100%; 
   height: 100%;
+  font-family: var(--primary-font-family);
+  font-weight: var(--header3-font-weight);
+  font-size: var(--text-font-size);
+  text-align: center;
 }  
 
 /* page Header */
  header {
-    background-color: var(--primary-white-color);
+    /* background-color: var(--primary-white-color); */
     border-top-color: var(--white-text-color);
-    width: var(--page-width);
+    /* width: var(--page-width); */
     height: 72px;
     align-items: center;
     display: flex;
@@ -74,6 +79,7 @@ a.logo {
     letter-spacing: 3%;
     text-align: 0;
     text-decoration: none;
+    text-align:start;
 }
 
 .accentcolor {
@@ -89,9 +95,9 @@ a.logo {
     justify-content:space-between;
     text-decoration: none;
     align-self: center;
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-size: var(--regular-font-size);
-    font-weight: var(--header3-font-weight);
+    /* font-weight: var(--header3-font-weight); */
     line-height: var(--header3-line-height);
     letter-spacing: 0.02em;
     color: var(--dark-background-color);
@@ -107,7 +113,7 @@ a.menu-nav{
     margin-bottom: 24px;
     margin-right: 40px;
     text-decoration: none;
-    color: var(--primary-font-family);
+    /* color: var(--primary-font-family); */
     line-height: var(--header3-line-height);
     color: var(--text-color);
     letter-spacing: 0.02em;
@@ -131,7 +137,7 @@ a.menu-nav{
  main {
     /* background-color: var(--primary-white-color); */
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--text-font-weight);
     font-display: swap;
  }
 
@@ -190,7 +196,7 @@ h2.title {
     display:flow-root;
     width: var(--page-width);
     color: var(--title-text-color);
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-size: var(--header2-font-size);
     font-weight: var(--header-font-weight);
     line-height: var(--header2-line-height);
@@ -215,9 +221,9 @@ h3 {
     margin-right: 24px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-size: var(--header3-font-size);
-    font-weight: var(--header3-font-weight);
+    /* font-weight: var(--header3-font-weight); */
     line-height: var(--header3-line-height);
 }
 
@@ -228,7 +234,7 @@ p.feature-content {
     margin: 120px, 24px, 120px, 24px;
     flex-grow: 0;
     color: var(--text-color);
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
     line-height: var(--header3-line-height);
@@ -270,7 +276,7 @@ li.img-cotainer.list.first {
 }
 
 /* Our team section */
-section#team.section.cards {
+.section.cards.team {
     width: var(--page-width);
     height: 732px;
     margin: 212px, 24px, 140px, 24px;
@@ -299,30 +305,35 @@ li.team-card-container.list#first {
     margin-left: 0px;
 }
 
-.card-content {
+ul.teamplayers-card-content {
     width: 232px;
     height: 56px;
     padding: 0px;
-    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
     background-color: var(--primary-white-color);
 }
 
 
-.teamplayers-name {
-    font-family: var(--primary-font-family);
-    font-weight: var(--header3-font-weight);
+h3.teamplayers-name {
+    /* font-family: var(--primary-font-family); */
+    /* font-weight: var(--header3-font-weight); */
     font-size: var(--header3-font-size);
     line-height: var(--header3-line-height);
     margin-bottom: 8px;
+    width: 232px;
     color: var(--title-text-color);
 }
 
 .teamplayers-position {
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
+    margin-bottom: 0px;
     font-weight: var(--text-font-weight);
     font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
-    text-align: center;
     color: var(--text-color);
 }
 
@@ -334,14 +345,17 @@ footer {
     font-style: normal;
     font-display: swap;
     flex: 0 0 auto;
+    position: absolute;
  } 
 
 .text.logo-footer {
     margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: 156px;
+    padding: 0px;
     width: 264px;
     height: 110px;
-    position: absolute;
+    text-align: left;
 }
 
 a.logo-footer {
@@ -355,7 +369,7 @@ a.logo-footer {
     height: 72px;
     margin-top: 16px;
     color: var(--white-text-color);
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-size: var(--regular-font-size); 
     font-weight: var(--text-font-weight);
     line-height: var(--header3-line-height);
@@ -367,7 +381,7 @@ a.logo-footer {
    height: var(--portfolio-page-heignt);
    width: 100%;
    height: 100%;
-   background-color: var(--primary-white-color); 
+   /* background-color: var(--primary-white-color);  */
  } 
 
  section.filters-container.buttons.top {
@@ -380,7 +394,7 @@ a.logo-footer {
 
  .filters:hover {
   background-color: var(--white-title-text-color);
-  border: 1px solid var(--primary-white-color);
+  /* border: 1px solid var(--primary-white-color); */
   border-radius: 4px;
 }
 
@@ -436,6 +450,10 @@ button.filters.all:active {
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 
@@ -463,8 +481,9 @@ ul.card-content.list {
     margin-bottom: 32px;
 }
 
-ul.list>h3.content.name {
+h3.content.name {
     margin-bottom: 8px;
+    width: 290px;
 }
 
 ul.list>p.content.type {
@@ -476,9 +495,9 @@ ul.list>p.content.type {
 }
 
 .content.name {
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-size: var(--header3-font-size);
-    font-weight: var(--header3-font-weight);
+    /* font-weight: var(--header3-font-weight); */
     line-height: var(--header3-line-height);
     letter-spacing: 0.02em;
     text-align: left;
@@ -488,7 +507,7 @@ ul.list>p.content.type {
 p.content.type {
     margin-top: 0px;
     margin-bottom: 32px;
-    font-family: var(--primary-font-family);
+    /* font-family: var(--primary-font-family); */
     font-size: var(--regular-font-size);
     font-weight: var(--text-font-weight);
     line-height: var(--text-line-height);
