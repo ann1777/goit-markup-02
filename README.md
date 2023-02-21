@@ -5,7 +5,7 @@
 * Squoosh service has been used to optimize the images.
 * GitHub Pages links were configured and added to the live page in the GitHub repository header.
 
-##Project Requirements:##
+## Project Requirements:##
 * "A1" The images folder with images is present in the root of the project.
 * "A2" A css folder with style files is present in the root of the project.
 * "A3" All styles have been written in the styles.css file, which is located in the css folder.
@@ -15,7 +15,7 @@
 * "A7" All bitmaps have been optimized using Squoosh.
 * "A8" The code is written in accordance with the guidelines.
 
-##Markup Requirements:##
+## Markup Requirements:##
 * "B1" The Portfolio page markup has been typed in the portfolio.html file.
 * "B2" HTML markup of all layout elements has been done.
 * "B3" Tags are used according to their semantic content.
@@ -31,7 +31,7 @@
 * "B13" All necessary fonts according to the layout and their variations (weight and drawing) are connected from the Google Fonts service with one link. The required weight for Raleway is 800, and for Roboto - 400, 500, 700 and 900.
 * "B14" There are no additional elements inside the button markup, such as spans or links.
 
-##Design Requirements##
+## Design Requirements##
 * "C1" There are no global element styles except 'body'.
 * "C2" Class selectors are used for design.
 * "C3" !important is missing from the styles.
