@@ -429,6 +429,15 @@ button.filters.all:active {
     width: 126px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+}
+
 
  ul.rows-container-wrapper.up {
     margin-top: 72px;
@@ -445,6 +454,7 @@ button.filters.all:active {
    padding-left: 0px;
    justify-content:space-between;
 }
+
 ul.card-content.list {
     width: 360px;
     height: 56px;
