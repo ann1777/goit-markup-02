@@ -137,15 +137,6 @@ a.link-active:focus {
     align-content: center;  
 }
 
-.filters-container {
-    margin-top: 89px;
-    margin-bottom: 72px;
-}
-
-.filters {
-   height: 48px; 
-   line-height: var(--header3-line-height);
-}
 
 ul.contacts.container-wrapper.list {
     font-style: normal;
@@ -410,13 +401,22 @@ a.logo-footer {
    /* background-color: var(--primary-white-color);  */
  } 
 
+ /* Filters section */
  section.filters-container.buttons.top {
     width: 586px;
     height: 48px;
-    margin-left: 271px;
+    margin-top: 89px;
+    margin-bottom: 72px;
+    margin-right: 271px;
+    margin-left: 427px;
     padding: 0;
     display: flex;
  }
+
+.filters {
+   height: 48px; 
+   line-height: var(--header3-line-height);
+}
 
  .filters:hover {
   background-color: var(--white-title-text-color);
