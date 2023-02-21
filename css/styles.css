@@ -18,7 +18,7 @@
     --logo-font-size: 18px;
     --regular-font-size: 16px;
     --text-font-size: 14px; 
-    --text-font-weight: 400;
+    /* --text-font-weight: 400; */
     --header3-font-weight: 500;
     --header-font-weight: 700;
     --header1-line-height: 1.07;
@@ -42,17 +42,13 @@ body {
   height: var(--page-height);
   background-color: var(--primary-white-color);
   color: var(--text-color);
-  /* width: 100%; 
-  height: 100%; */
-  font-family: var(--primary-font-family);
-  font-weight: var(--header3-font-weight);
+  font-family: var(--primary-font-family), sans-serif;
   font-size: var(--text-font-size);
   text-align: center;
 }  
 
 /* page Header */
  header {
-    /* background-color: var(--primary-white-color); */
     border-top-color: var(--white-text-color);
     width: var(--page-width);
     height: 72px;
@@ -97,9 +93,8 @@ a.logo {
     padding-left: 0px;
     align-self: center;
     margin-right: 332px;
-    /* font-family: var(--primary-font-family); */
     font-size: var(--regular-font-size);
-    /* font-weight: var(--header3-font-weight); */
+    font-weight: var(--header3-font-weight);
     line-height: var(--header3-line-height);
     letter-spacing: 0.02em;
     color: var(--dark-background-color);
@@ -119,9 +114,7 @@ a.link-active:focus {
     margin-right: 40px;
     margin-top: 24px;
     margin-bottom: 24px;
-    /* margin-right: 40px; */
     text-decoration: none;
-    /* color: var(--primary-font-family); */
     line-height: var(--header3-line-height);
     color: var(--text-color);
     letter-spacing: 0.02em;
@@ -145,9 +138,6 @@ ul.contacts.container-wrapper.list {
 }
  
  main {
-    /* background-color: var(--primary-white-color); */
-    font-style: normal;
-    font-weight: var(--text-font-weight);
     font-display: swap;
  }
 
@@ -180,6 +170,7 @@ ul.contacts.container-wrapper.list {
     grid-auto-flow: column;
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
+    cursor:pointer;
 }
 
 .hero-img .order-button:hover,
@@ -213,9 +204,7 @@ h2.title {
     display:flow-root;
     width: var(--page-width);
     color: var(--title-text-color);
-    /* font-family: var(--primary-font-family); */
     font-size: var(--header2-font-size);
-    font-weight: var(--header-font-weight);
     line-height: var(--header2-line-height);
 }
 
@@ -238,9 +227,7 @@ h3 {
     margin-right: 24px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    /* font-family: var(--primary-font-family); */
     font-size: var(--header3-font-size);
-    /* font-weight: var(--header3-font-weight); */
     line-height: var(--header3-line-height);
 }
 
@@ -251,9 +238,7 @@ p.feature-content {
     margin: 120px, 24px, 120px, 24px;
     flex-grow: 0;
     color: var(--text-color);
-    /* font-family: var(--primary-font-family); */
     font-size: var(--regular-font-size);
-    font-weight: var(--text-font-weight);
     line-height: var(--header3-line-height);
 }
 
@@ -336,8 +321,6 @@ ul.teamplayers-card-content {
 
 
 h3.teamplayers-name {
-    /* font-family: var(--primary-font-family); */
-    /* font-weight: var(--header3-font-weight); */
     font-size: var(--header3-font-size);
     line-height: var(--header3-line-height);
     margin-bottom: 8px;
@@ -346,9 +329,7 @@ h3.teamplayers-name {
 }
 
 .teamplayers-position {
-    /* font-family: var(--primary-font-family); */
     margin-bottom: 0px;
-    font-weight: var(--text-font-weight);
     font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
     color: var(--text-color);
@@ -357,9 +338,7 @@ h3.teamplayers-name {
 footer {
     height: 310px;
     width: var(--page-width);
-    font-weight: var(--text-font-weight);
     background-color: var(--dark-background-color);
-    font-style: normal;
     font-display: swap;
     flex: 0 0 auto;
     position: absolute;
@@ -386,9 +365,7 @@ a.logo-footer {
     height: 72px;
     margin-top: 16px;
     color: var(--white-text-color);
-    /* font-family: var(--primary-font-family); */
-    font-size: var(--regular-font-size); 
-    font-weight: var(--text-font-weight);
+    font-size: var(--regular-font-size);
     line-height: var(--header3-line-height);
 }
 
@@ -398,7 +375,6 @@ a.logo-footer {
    height: var(--portfolio-page-heignt);
    width: 100%;
    height: 100%;
-   /* background-color: var(--primary-white-color);  */
  } 
 
  /* Filters section */
@@ -413,14 +389,17 @@ a.logo-footer {
     display: flex;
  }
 
-.filters {
-   height: 48px; 
-   line-height: var(--header3-line-height);
+ button.filters {
+    background-color: var(--white-title-text-color);
+    border: 1px solid var(--primary-white-color);
+    padding: 12px, 24px, 12px, 24px;
+    height: 48px; 
+    line-height: var(--header3-line-height);
+    cursor:pointer;
 }
 
  .filters:hover {
   background-color: var(--white-title-text-color);
-  /* border: 1px solid var(--primary-white-color); */
   border-radius: 4px;
 }
 
@@ -431,11 +410,6 @@ a.logo-footer {
   color: var(--primary-white-color);
 }
 
-button.filters {
-    background-color: var(--white-title-text-color);
-    border: 1px solid var(--primary-white-color);
-    padding: 12px, 24px, 12px, 24px;
-}
 
 button.filters.all:active {
     background-color: var(--btn-active-color);
@@ -447,7 +421,6 @@ button.filters.all:active {
 .filters.all {
     width: 69px;
     margin-right: 24px;
-
 }
 
 .filters.website {
@@ -532,7 +505,6 @@ p.content.type {
     margin-bottom: 32px;
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
-    font-weight: var(--text-font-weight);
     line-height: var(--text-line-height);
     letter-spacing: 0.02em;
     text-align: left;
