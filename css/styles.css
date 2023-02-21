@@ -107,6 +107,10 @@ a.menu-nav{
     text-decoration: none;
 }
 
+a.link.active:hover {
+    color: var(--btn-active-color);
+}
+
 .contacts a{
     gap: 40px;
     margin-top: 24px;
@@ -171,6 +175,11 @@ a.menu-nav{
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
 }
+
+.hero-img .order-button:hover {
+    color: var(--btn-active-color);
+}
+
 /* hide lists dots */
 .list {
     list-style: none;
