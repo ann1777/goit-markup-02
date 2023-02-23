@@ -47,6 +47,12 @@ a.logo {
     text-decoration: none;
 }
 
+.logo>span.accentcolor:hover,
+.logo>span.bluecolor:hover,
+.logo>span.whitecolor:hover {
+    text-decoration: underline;
+}
+
 .footer {
     line-height: var(--footer-logo-line-height);
 }
@@ -241,7 +247,7 @@ footer {
     border-color: #E7E9FC;
 }
 
-.filters[aria-label]:hover {
+.filters[aria-label]:hover:after {
     text-decoration: underline;
 }
 
