@@ -20,7 +20,7 @@
     --text-font-size: 14px; 
     --text-font-weight: 400;
     --header3-font-weight: 500;
-    --header-font-weight: 700;
+    --header1-font-weight: 700;
     --header1-line-height: 1.07;
     --header2-line-height: 1.11;
     --header3-line-height: 1.15;
@@ -93,21 +93,22 @@ ul.contacts.container-wrapper.list {
     background-color: var(--dark-background-color);
  }
 
- .hero-img h1 { 
+ .hero-msg { 
     width: 490px;
     font-size: var(--header1-font-size);
     line-height: var(--header1-line-height);
+    font-weight: var(--header1-font-weight);
     color: var(--white-text-color);
  }
 
-.hero-img .order-button {
+.hero-btn {
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
     cursor:pointer;
 }
 
-.hero-img .order-button:hover,
-.hero-img .order-button:focus {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: var(--btn-active-color);
     color: var(--primary-white-color);
 }
@@ -252,13 +253,11 @@ h3.content.name {
     font-family: var(--primary-font-family);
     font-size: var(--header3-font-size);
     font-weight: var(--header3-font-weight);
-    letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
 
 p.content.type {
     font-family: var(--primary-font-family);
     font-size: var(--regular-font-size);
-    letter-spacing: 0.02em;
     color: var(--text-color);
 }
