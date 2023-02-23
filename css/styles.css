@@ -247,7 +247,7 @@ footer {
     border-color: #E7E9FC;
 }
 
-.filters[aria-label]:hover:after {
+.filters[aria-label]:hover {
     text-decoration: underline;
 }
 
