@@ -36,6 +36,7 @@ body {
   color: var(--text-color);
   font-family: var(--primary-font-family), sans-serif;
   font-size: var(--regular-font-size);
+  font-weight: var(--header3-font-weight);
   letter-spacing: 0.02em;
 }  
 
@@ -43,7 +44,6 @@ a.logo {
     font-family: var(--secondary-font-family);
     font-size: var(--logo-font-size);
     line-height: var(--header-logo-line-height);
-    font-weight: var(--header3-font-weight);
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ a.menu-nav{
     text-decoration: none;
 }
 
-a.link.active {
+a.active-link {
     color: var(--btn-active-color);
     text-decoration:none;
 }
@@ -72,6 +72,12 @@ a.link.active {
 a.link:hover,
 a.link:focus {
     color: var(--btn-active-color);
+    text-decoration: underline;
+}
+
+.address-link:hover,
+.link:hover {
+    text-decoration: underline;
 }
 
 .contacts a{
@@ -119,10 +125,11 @@ ul.contacts.container-wrapper.list {
 }
 
 /* hide link text underline */
-.nav-link {
+.nav {
     font-weight: var(--header3-font-weight);
     font-size: var()
-    color: var(--title-text-color);
+    color: #2E2F42;
+    /* color: var(--title-text-color); */
     line-height: var(--header3-line-height);
     text-decoration: none;
 }
@@ -135,8 +142,8 @@ ul.contacts.container-wrapper.list {
 }
 
 .address-link:hover,
-.nav-link:hover,
-.nav-link:focus {
+.nav:hover,
+.nav:focus {
     text-decoration: underline;
 }
 
@@ -204,21 +211,38 @@ footer {
 }
 
 /* Portfolio page */
-.body-container.portfolio {
-   width: var(--page-width);
-   height: var(--portfolio-page-heignt);
- } 
 
-
- button.filters {
-    background-color: var(--white-title-text-color);
+.filters {
+    background-color: var(--background-color);
+    border-radius: 1px;
+    border-color: var(--white-text-color);
     line-height: var(--header3-line-height);
+    margin-left: 24px;
+    font-size: 16px;
+    height: 48px;
     cursor:pointer;
+    color: var(--accent-text-color);
+}
+
+.filters-active {
+    background-color: var(--btn-active-color);
+    border-radius: 4px;
+    border-color: var(--btn-active-color);
+    line-height: var(--header3-line-height);
+    font-size: 16px;
+    height: 48px;
+    cursor:pointer;
+    color: var(--primary-white-color);
 }
 
  .filters:hover {
     background-color: var(--white-title-text-color);
     border-radius: 4px;
+    border-color: #E7E9FC;
+}
+
+.filters[aria-label]:hover {
+    text-decoration: underline;
 }
 
 .filters:active,
@@ -229,9 +253,29 @@ footer {
 }
 
 
-button.filters.all:active {
+.filters.all:active {
     background-color: var(--btn-active-color);
     color: var(--primary-white-color);
+}
+
+.filters-active.all {
+    width: 69px;
+}
+
+.filters.website {
+    width: 116px;
+}
+
+.filters.app {
+    width: 78px;
+}
+
+.filters.design {
+    width: 101px;
+}
+
+.filters.marketing {
+    width: 126px;
 }
 
 
